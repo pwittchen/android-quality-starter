@@ -12,11 +12,11 @@ msg() {
 
 main() {
   msg "Creating directories"
-  mkdir -p config/quality
-  mkdir -p config/quality/checkstyle
-  mkdir -p config/quality/findbugs
-  mkdir -p config/quality/lint
-  mkdir -p config/quality/pmd
+  mkdir -pv config/quality
+  mkdir -pv config/quality/checkstyle
+  mkdir -pv config/quality/findbugs
+  mkdir -pv config/quality/lint
+  mkdir -pv config/quality/pmd
 
   msg "Downloading configuration files"
   wget https://raw.githubusercontent.com/pwittchen/android-quality-starter/master/config/quality.gradle -P ./config/
