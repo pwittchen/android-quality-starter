@@ -28,7 +28,13 @@ main() {
   wget $QUALITY_DIR/lint/lint.xml -P ./config/quality/lint/
   wget $QUALITY_DIR/pmd/pmd-ruleset.xml -P ./config/quality/pmd/
 
-  # TODO: append: apply from: '../config/quality.gradle' to build.gradle files in found project directories
+  msg "Almost done - manual configuration required!"
+  msg "Now, you need to add instruction below to build.gradle file of the module, you want check:"
+  msg "apply from: '../config/quality.gradle'"
+  msg "When you're done, just run:"
+  msg "./gradlew check"
+  msg "from the terminal inside main directory of your project"
+  msg "That's it!"
 }
 
 main "$@" # "$@" is an array-like construct of all positional parameters, {$1, $2, $3 ...}
