@@ -11,3 +11,7 @@ curl https://raw.githubusercontent.com/pwittchen/android-quality-starter/master/
 ```
 
 then wait for a while and follow short instruction in the end for quick manual setup
+
+references
+----------
+- https://github.com/vincentbrison/vb-android-app-quality
