@@ -33,5 +33,5 @@ References
 - https://github.com/vincentbrison/vb-android-app-quality
 - http://checkstyle.sourceforge.net/
 - http://findbugs.sourceforge.net/
-- https://pmd.github.io/
+- http://pmd.github.io/
 - https://developer.android.com/studio/write/lint.html
