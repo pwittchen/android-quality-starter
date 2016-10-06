@@ -19,12 +19,14 @@ main() {
   mkdir -pv config/quality/pmd
 
   msg "Downloading configuration files"
-  wget https://raw.githubusercontent.com/pwittchen/android-quality-starter/master/config/quality.gradle -P ./config/
-  wget https://raw.githubusercontent.com/pwittchen/android-quality-starter/master/config/quality/checkstyle/checkstyle.xml -P ./config/quality/checkstyle/
-  wget https://raw.githubusercontent.com/pwittchen/android-quality-starter/master/config/quality/checkstyle/suppressions.xml -P ./config/quality/checkstyle/
-  wget https://raw.githubusercontent.com/pwittchen/android-quality-starter/master/config/quality/findbugs/findbugs-filter.xml -P ./config/quality/findbugs/
-  wget https://raw.githubusercontent.com/pwittchen/android-quality-starter/master/config/quality/lint/lint.xml -P ./config/quality/lint/
-  wget https://raw.githubusercontent.com/pwittchen/android-quality-starter/master/config/quality/pmd/pmd-ruleset.xml -P ./config/quality/pmd/
+  REPOSITORY_PATH=https://raw.githubusercontent.com/pwittchen/android-quality-starter/master/config
+  QUALITY_DIR=$REPOSITORY_PATH/quality
+  wget $REPOSITORY_PATH/quality.gradle -P ./config/
+  wget $QUALITY_DIR/checkstyle/checkstyle.xml -P ./config/quality/checkstyle/
+  wget $QUALITY_DIR/checkstyle/suppressions.xml -P ./config/quality/checkstyle/
+  wget $QUALITY_DIR/findbugs/findbugs-filter.xml -P ./config/quality/findbugs/
+  wget $QUALITY_DIR/lint/lint.xml -P ./config/quality/lint/
+  wget $QUALITY_DIR/pmd/pmd-ruleset.xml -P ./config/quality/pmd/
 
   # TODO: append: apply from: '../config/quality.gradle' to build.gradle files in found project directories
 }
