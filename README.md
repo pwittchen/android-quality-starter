@@ -20,7 +20,7 @@ Remember to add line:
 apply from: '../config/quality.gradle'
 ```
 
-to `build.gradle` of the module you want to check.
+to `build.gradle` file of the module you want to check.
 
 Then you can execute the following command in the main directory of the project:
 
