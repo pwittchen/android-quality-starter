@@ -28,6 +28,10 @@ Then you can execute the following command in the main directory of the project:
 ./gradlew check
 ```
 
+Exemplary Android project using this configuration
+--------------------------------------------------
+- https://github.com/pwittchen/ReactiveNetwork
+
 References
 ----------
 - https://github.com/vincentbrison/vb-android-app-quality
