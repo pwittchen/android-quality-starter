@@ -1,7 +1,7 @@
 # android-quality-starter
 setup CheckStyle, FindBugs, PMD and Lint for your Android project easily
 
-This projects adds gradle setup for quality tools mentioned above to your project via shell script. After adding this, you can easily increase quality of your project by static code analysis.
+This project adds gradle setup for quality tools mentioned above to Android project via shell script. After adding this, we can easily increase quality of the project by static code analysis.
 
 Usage
 -----
