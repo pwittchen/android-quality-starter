@@ -3,6 +3,8 @@ setup CheckStyle, FindBugs, PMD and Lint for your Android project easily
 
 This project adds gradle setup for quality tools mentioned above to Android project via shell script. After adding this, we can easily increase quality of the project by static code analysis.
 
+This project is inspired by [vb-android-app-quality](https://github.com/vincentbrison/vb-android-app-quality) application.
+
 Usage
 -----
 
@@ -35,6 +37,7 @@ Exemplary Android project using this configuration
 References
 ----------
 - https://github.com/vincentbrison/vb-android-app-quality
+- https://github.com/stephanenicolas/Quality-Tools-for-Android
 - http://checkstyle.sourceforge.net/
 - http://findbugs.sourceforge.net/
 - http://pmd.github.io/
